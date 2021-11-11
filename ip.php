@@ -26,4 +26,6 @@ fwrite($fp, $useragent);
 fwrite($fp, $browser);
 
 
-fclose($fp)
+fclose($fp);
+
+
