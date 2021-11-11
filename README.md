@@ -11,5 +11,4 @@ This tool is made for hacking front camera of laptop and mobile phone
 #### 1. Linux distribution
 #### 2. Android platform (for example :- termux and andrax etc..)
 # practical image
-
-
+[![IMG_20211111_184508](https://user-images.githubusercontent.com/90603785/141304566-5edf9f88-d369-4f2c-a568-09032f4d6559.jpg)
